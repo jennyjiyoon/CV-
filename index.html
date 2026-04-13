@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background: #f7f8fa;
+      color: #1a1a1a;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      height: 90vh;
+    }
+
+    .sidebar {
+      background: #111827;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin: 6px 0;
+      text-align: center;
+    }
+
+    .main {
+      padding: 30px;
+      overflow-y: auto;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #2563eb;
+    }
+
+    .item {
+      margin-bottom: 16px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .item p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin: 4px 6px 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="sidebar">
+    <img src="민증사진.jpg" alt="profile" style="width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:16px; border:3px solid #374151;">
+    <h1>정지윤</h1>
+    <p>jennyjiyoon@snu.ac.kr</p>
+    <p>010-2426-7461</p>
+    <p><a href="https://www.linkedin.com/in/jiyoon-jeong-00107136a" target="_blank" style="color:#93c5fd; text-decoration:none;">LinkedIn Profile</a></p>
+  </div>
+
+  <div class="main">
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-header">
+          <span>Seoul National University (School of Transdisciplinary Innovations)</span>
+          <span>2025 - present</span>
+        </div>
+        <p>Relevant Coursework: 채우기 </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Activities & Leadership</h2>
+      <div class="item">
+        <div class="item-header">
+          <span>Honor Society of SNUTI, TI:um</span>
+          <span>2026 - present</span>
+        </div>
+        <p>External Relations Team Leader</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="item">
+        <div class="item-header">
+          <span>인턴 / 대외활동</span>
+          <span>2024</span>
+        </div>
+        <p>구체적인 역할 + 성과 (숫자나 결과 중심으로 작성)</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="item">
+        <div class="item-header">
+          <span>프로젝트 이름</span>
+        </div>
+        <p>Tech: Python, C++, etc</p>
+        <p>문제 정의 → 해결 방법 → 결과 순으로 작성</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Awards & Honors</h2>
+      <div class="item">
+        <div class="item-header">
+          <span>수상명</span>
+          <span>2025</span>
+        </div>
+        <p>수상 이유 또는 성과</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
